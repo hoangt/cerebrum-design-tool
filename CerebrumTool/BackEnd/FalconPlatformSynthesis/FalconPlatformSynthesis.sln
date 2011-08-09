@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconPlatformSynthesis", "FalconPlatformSynthesis\FalconPlatformSynthesis.csproj", "{8D7A0BA0-5330-42EE-BAAB-6EE6042DE4DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconGlobal", "..\FalconGlobal\FalconGlobal.csproj", "{D1213EFE-A95C-4513-A604-0613D669487A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpSSH", "..\SharpSSH\SharpSSH.csproj", "{D27CF69D-4681-492A-BE4D-D3D209104423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconPlatformSynthesisTool", "FalconPlatformSynthesisTool\FalconPlatformSynthesisTool.csproj", "{08F13270-2636-46F1-BBE0-F29C7BE0C97B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconCommandLineParser", "..\FalconCommandLineParser\FalconCommandLineParser\FalconCommandLineParser.csproj", "{51299C7B-871B-459C-8BE3-8C9E5072D681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.SharpZLib", "..\SharpZipLib\ICSharpCode.SharpZLib.csproj", "{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconPathManager", "..\FalconPathManager\FalconPathManager.csproj", "{9D9E48B8-E211-4600-A6CF-0DE63DD582CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D7A0BA0-5330-42EE-BAAB-6EE6042DE4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7A0BA0-5330-42EE-BAAB-6EE6042DE4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7A0BA0-5330-42EE-BAAB-6EE6042DE4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7A0BA0-5330-42EE-BAAB-6EE6042DE4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1213EFE-A95C-4513-A604-0613D669487A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1213EFE-A95C-4513-A604-0613D669487A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1213EFE-A95C-4513-A604-0613D669487A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1213EFE-A95C-4513-A604-0613D669487A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27CF69D-4681-492A-BE4D-D3D209104423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27CF69D-4681-492A-BE4D-D3D209104423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27CF69D-4681-492A-BE4D-D3D209104423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27CF69D-4681-492A-BE4D-D3D209104423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F13270-2636-46F1-BBE0-F29C7BE0C97B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F13270-2636-46F1-BBE0-F29C7BE0C97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F13270-2636-46F1-BBE0-F29C7BE0C97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F13270-2636-46F1-BBE0-F29C7BE0C97B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51299C7B-871B-459C-8BE3-8C9E5072D681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51299C7B-871B-459C-8BE3-8C9E5072D681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51299C7B-871B-459C-8BE3-8C9E5072D681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51299C7B-871B-459C-8BE3-8C9E5072D681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D9E48B8-E211-4600-A6CF-0DE63DD582CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D9E48B8-E211-4600-A6CF-0DE63DD582CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D9E48B8-E211-4600-A6CF-0DE63DD582CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D9E48B8-E211-4600-A6CF-0DE63DD582CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

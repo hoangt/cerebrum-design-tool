@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerebrumShell", "CerebrumShell\CerebrumShell.csproj", "{AF0C2C48-1860-4871-8167-621FE42CCFA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerebrumCommandShell", "CerebrumCommandShell\CerebrumCommandShell.csproj", "{9BF04D71-9549-4843-92CD-A58EAC6EBE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FalconGlobal", "..\FalconGlobal\FalconGlobal.csproj", "{D1213EFE-A95C-4513-A604-0613D669487A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF0C2C48-1860-4871-8167-621FE42CCFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0C2C48-1860-4871-8167-621FE42CCFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0C2C48-1860-4871-8167-621FE42CCFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0C2C48-1860-4871-8167-621FE42CCFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF04D71-9549-4843-92CD-A58EAC6EBE56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF04D71-9549-4843-92CD-A58EAC6EBE56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF04D71-9549-4843-92CD-A58EAC6EBE56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF04D71-9549-4843-92CD-A58EAC6EBE56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1213EFE-A95C-4513-A604-0613D669487A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1213EFE-A95C-4513-A604-0613D669487A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1213EFE-A95C-4513-A604-0613D669487A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1213EFE-A95C-4513-A604-0613D669487A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

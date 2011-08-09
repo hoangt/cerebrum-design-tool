@@ -1,0 +1,386 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{904EC475-F6F7-4091-8FFB-D7C12BE1648F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ToolBox</AssemblyName>
+    <AssemblyOriginatorKeyFile>ToolBoxSnk.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ToolBox</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="xpexplorerbar, Version=3.3.0.0, Culture=neutral, PublicKeyToken=26272737b5f33015">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\xpexplorerbar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Delegates.cs" />
+    <Compile Include="EventArgs\FontFamilyChangedEventArgs.cs" />
+    <Compile Include="Controls\FontFamilyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FontFamilyPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EventArgs\FontSizeChangedEventArgs.cs" />
+    <Compile Include="Controls\StringAlignmentPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EventArgs\StringAlignmentChangedEventArgs.cs" />
+    <Compile Include="Controls\TextFormatPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStripFontFamilyPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStripFontSizePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStripTextFormatPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewColorColumn.cs" />
+    <Compile Include="EventArgs\TextFormatChangedEventArgs.cs" />
+    <Compile Include="FillModeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Formatting\TextFormat.cs" />
+    <Compile Include="Formatting\TextFormatter.cs" />
+    <Compile Include="Forms\PropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PropertiesForm.Designer.cs">
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Images.cs" />
+    <Compile Include="Imaging\ImageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Imaging\ImageEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imaging\ImageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Imaging\ImageUIEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Imaging\ImageViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\BaseMenuPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\ImageMenuPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\Interfaces.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\MenuEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\Office2003MenuPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\PlainMenuPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\SafeNativeMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\SkinMenuPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\MenuPainter\VSMenuPainter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\ColorPicker\ComboBoxColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\ColorPicker\ComboBoxColorPicker.designer.cs">
+      <DependentUpon>ComboBoxColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficePickers\ColorPicker\OfficeColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\ColorPicker\OfficeColorPicker.designer.cs">
+      <DependentUpon>OfficeColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficePickers\ColorPicker\SelectableColor.cs" />
+    <Compile Include="OfficePickers\ColorPicker\ToolStripColorPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\OfficeLineCapPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\OfficeLineCapPicker.designer.cs">
+      <DependentUpon>OfficeLineCapPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\OfficeLineStylePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\OfficeLineStylePicker.designer.cs">
+      <DependentUpon>OfficeLineStylePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\OfficeLineWidthPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\OfficeLineWidthPicker.designer.cs">
+      <DependentUpon>OfficeLineWidthPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\SelectableLineCaps.cs" />
+    <Compile Include="OfficePickers\LinePicker\SelectableLineStyles.cs" />
+    <Compile Include="OfficePickers\LinePicker\SelectableLineWidths.cs" />
+    <Compile Include="OfficePickers\LinePicker\ToolStripLineCapPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\ToolStripLineStylePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\LinePicker\ToolStripLineWidthPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\Utils\ArtPalette.cs" />
+    <Compile Include="OfficePickers\Utils\ConnectionCaps.cs" />
+    <Compile Include="OfficePickers\Utils\ContextMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\Utils\ContextMenuForm.designer.cs">
+      <DependentUpon>ContextMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficePickers\Utils\CustomCaps.cs" />
+    <Compile Include="OfficePickers\Utils\CustomColors.cs" />
+    <Compile Include="OfficePickers\Utils\CustomLines.cs" />
+    <Compile Include="OfficePickers\Utils\CustomLineWidthDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\Utils\CustomStyles.cs" />
+    <Compile Include="OfficePickers\Utils\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\Utils\LineWeightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficePickers\Utils\LineWeightForm.designer.cs">
+      <DependentUpon>LineWeightForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficePickers\Utils\ToolStripPickerDisplayType.cs" />
+    <EmbeddedResource Include="Forms\PropertiesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\ImageEditorDialog.resx">
+      <DependentUpon>ImageEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuPainter\BaseMenuPainter.resx">
+      <DependentUpon>BaseMenuPainter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuPainter\ImageMenuPainter.resx">
+      <DependentUpon>ImageMenuPainter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuPainter\MenuEx.resx">
+      <DependentUpon>MenuEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuPainter\Office2003MenuPainter.resx">
+      <DependentUpon>Office2003MenuPainter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuPainter\PlainMenuPainter.resx">
+      <DependentUpon>PlainMenuPainter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuPainter\SkinMenuPainter.resx">
+      <DependentUpon>SkinMenuPainter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menus\MenuPainter\VSMenuPainter.resx">
+      <DependentUpon>VSMenuPainter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\ColorPicker\ComboBoxColorPicker.resx">
+      <DependentUpon>ComboBoxColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\ColorPicker\OfficeColorPicker.resx">
+      <DependentUpon>OfficeColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\ColorPicker\ToolStripColorPicker.resx">
+      <DependentUpon>ToolStripColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\LinePicker\OfficeLineCapPicker.resx">
+      <DependentUpon>OfficeLineCapPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\LinePicker\OfficeLineStylePicker.resx">
+      <DependentUpon>OfficeLineStylePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\LinePicker\OfficeLineWidthPicker.resx">
+      <DependentUpon>OfficeLineWidthPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\LinePicker\ToolStripLineCapPicker.resx">
+      <DependentUpon>ToolStripLineCapPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\LinePicker\ToolStripLineStylePicker.resx">
+      <DependentUpon>ToolStripLineStylePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\LinePicker\ToolStripLineWidthPicker.resx">
+      <DependentUpon>ToolStripLineWidthPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\Utils\ContextMenuForm.resx">
+      <DependentUpon>ContextMenuForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficePickers\Utils\LineWeightForm.resx">
+      <DependentUpon>LineWeightForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ToolBoxSnk.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Properties.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
