@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D05D149-0374-4CC4-9FD1-0EFD712567C2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MapTool</RootNamespace>
+    <AssemblyName>map</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\map.XML</DocumentationFile>
+    <WarningsAsErrors>1591</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\map.XML</DocumentationFile>
+    <WarningsAsErrors>1591</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\FrontEnd\CerebrumSharedClasses\CerebrumSharedClasses.csproj">
+      <Project>{35D43F5B-D9D5-4827-A1CD-890C563A2BF8}</Project>
+      <Name>CerebrumSharedClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FalconCommandLineParser\FalconCommandLineParser\FalconCommandLineParser.csproj">
+      <Project>{51299C7B-871B-459C-8BE3-8C9E5072D681}</Project>
+      <Name>FalconCommandLineParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FalconGlobal\FalconGlobal.csproj">
+      <Project>{D1213EFE-A95C-4513-A604-0613D669487A}</Project>
+      <Name>FalconGlobal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FalconPathManager\FalconPathManager.csproj">
+      <Project>{9D9E48B8-E211-4600-A6CF-0DE63DD582CD}</Project>
+      <Name>FalconPathManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FalconResources\FalconResources.csproj">
+      <Project>{56D57DB9-ECBD-4747-9D52-A5479BE7867C}</Project>
+      <Name>FalconResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RoutingAlgorithm\FalconGraph\FalconGraph.csproj">
+      <Project>{98DDB371-4157-41CF-BD62-7657C8C40526}</Project>
+      <Name>FalconGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconMappingAlgorithm\FalconMappingAlgorithm.csproj">
+      <Project>{393DAE63-5D0B-4251-9FA6-E2F84E918B40}</Project>
+      <Name>FalconMappingAlgorithm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+if EXIST *.dll copy /y *.dll ..\..\..\..\..\..\Install\bin
+if EXIST *.exe copy /y *.exe ..\..\..\..\..\..\Install\bin
+cd ..\..\..\..\..\..\Install\bin
+if EXIST *.vshost.exe del /q /f *.vshost.exe</PostBuildEvent>
+  </PropertyGroup>
+</Project>

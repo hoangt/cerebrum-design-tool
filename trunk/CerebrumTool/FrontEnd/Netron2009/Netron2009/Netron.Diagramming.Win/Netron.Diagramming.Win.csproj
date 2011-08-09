@@ -1,0 +1,299 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D15C2A9-7D08-4BA6-B307-BDE0CA8AF1CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Netron.Diagramming.Win</RootNamespace>
+    <AssemblyName>Netron.Diagramming.Win</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>ForUnitTestingPurposesOnly.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IP.Components, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>.\IP.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\DiagramExplorer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DiagramNavigationStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DiagramStatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\DiagramMenuItemBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\FileMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DiagramToolStripContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DiagramTreeNodeBase.cs" />
+    <Compile Include="UI\LayerTreeNode.cs" />
+    <Compile Include="UI\ShapeToolBoxItem.cs" />
+    <Compile Include="UI\LibraryViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PageListTreeNode.cs" />
+    <Compile Include="PageSetupDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageSetupDialog.Designer.cs">
+      <DependentUpon>PageSetupDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PageTreeNode.cs" />
+    <Compile Include="UI\ActionToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="UI\DiagramBaseToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DiagramControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DiagramControlDesigner.cs" />
+    <Compile Include="UI\DiagramControlDesignerActionList.cs" />
+    <Compile Include="UI\DiagramMainToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menus\DiagramMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DocumentInformation.Designer.cs">
+      <DependentUpon>DocumentInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DrawingToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Images.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextEditor\TextEditor.cs">
+    </Compile>
+    <Compile Include="TextTool.cs" />
+    <Compile Include="UI\FormatToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ViewToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\TextEditorTool.cs" />
+    <Compile Include="View.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DiagramControl.bmp" />
+    <EmbeddedResource Include="UI\DocumentInformation.resx">
+      <DependentUpon>DocumentInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Netron.Diagramming.Core\Netron.Diagramming.Core.csproj">
+      <Project>{96AEBBEE-4203-45F3-BCF5-7B73BF256BDA}</Project>
+      <Name>Netron.Diagramming.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolBox\ToolBox.csproj">
+      <Project>{904EC475-F6F7-4091-8FFB-D7C12BE1648F}</Project>
+      <Name>ToolBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ForUnitTestingPurposesOnly.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Add.cur" />
+    <EmbeddedResource Include="Resources\AlignObjectsBottomHS.png" />
+    <EmbeddedResource Include="Resources\AlignObjectsCenteredHorizontalHS.png" />
+    <EmbeddedResource Include="Resources\AlignObjectsCenteredVerticalHS.png" />
+    <EmbeddedResource Include="Resources\AlignObjectsLeftHS.png" />
+    <EmbeddedResource Include="Resources\AlignObjectsRightHS.png" />
+    <EmbeddedResource Include="Resources\AlignObjectsTopHS.png" />
+    <EmbeddedResource Include="Resources\BringForwardHS.png" />
+    <EmbeddedResource Include="Resources\BringToFrontHS.png" />
+    <EmbeddedResource Include="Resources\BucketFill.bmp" />
+    <EmbeddedResource Include="Resources\CenterAlignment.bmp" />
+    <EmbeddedResource Include="Resources\ClassShape.png" />
+    <EmbeddedResource Include="Resources\Connection.png" />
+    <EmbeddedResource Include="Resources\ConnectorMover.png" />
+    <EmbeddedResource Include="Resources\Cross.cur" />
+    <EmbeddedResource Include="Resources\DialHS.png" />
+    <EmbeddedResource Include="Resources\down.ico" />
+    <EmbeddedResource Include="Resources\DrawEllipse.png" />
+    <EmbeddedResource Include="Resources\DrawRectangle.png" />
+    <EmbeddedResource Include="Resources\DropImage.cur" />
+    <EmbeddedResource Include="Resources\DropShape.cur" />
+    <EmbeddedResource Include="Resources\DropText.cur" />
+    <EmbeddedResource Include="Resources\EditData.ico" />
+    <EmbeddedResource Include="Resources\Edit_RedoHS.png" />
+    <EmbeddedResource Include="Resources\Edit_UndoHS.png" />
+    <EmbeddedResource Include="Resources\FontDialogHS.png" />
+    <EmbeddedResource Include="Resources\Grip.cur" />
+    <EmbeddedResource Include="Resources\Group.png" />
+    <EmbeddedResource Include="Resources\HomeHS.png" />
+    <EmbeddedResource Include="Resources\idea.gif" />
+    <EmbeddedResource Include="Resources\LeftAlignment.bmp" />
+    <EmbeddedResource Include="Resources\minus.ico" />
+    <EmbeddedResource Include="Resources\Move.cur" />
+    <EmbeddedResource Include="Resources\NewDocumentHS.png" />
+    <EmbeddedResource Include="Resources\OrgChartHS.png" />
+    <EmbeddedResource Include="Resources\PenDraw.bmp" />
+    <EmbeddedResource Include="Resources\plus.ico" />
+    <EmbeddedResource Include="Resources\PropertiesHS.png" />
+    <EmbeddedResource Include="Resources\PublicMethod.ico" />
+    <EmbeddedResource Include="Resources\PublicProperty.ico" />
+    <EmbeddedResource Include="Resources\RepeatHS.png" />
+    <EmbeddedResource Include="Resources\RightAlignment.bmp" />
+    <EmbeddedResource Include="Resources\RulerHS.png" />
+    <EmbeddedResource Include="Resources\Schema.ico" />
+    <EmbeddedResource Include="Resources\Select.cur" />
+    <EmbeddedResource Include="Resources\Selection.cur" />
+    <EmbeddedResource Include="Resources\SendBackwardHS.png" />
+    <EmbeddedResource Include="Resources\SendToBackHS.png" />
+    <EmbeddedResource Include="Resources\ShowGridlines2HS.png" />
+    <EmbeddedResource Include="Resources\SPP.ico" />
+    <EmbeddedResource Include="Resources\StandardArrow.png" />
+    <EmbeddedResource Include="Resources\Text.png" />
+    <EmbeddedResource Include="Resources\ThumbnailView.png" />
+    <EmbeddedResource Include="Resources\Ungroup.png" />
+    <EmbeddedResource Include="Resources\up.ico" />
+    <EmbeddedResource Include="Resources\Web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Copy.png" />
+    <EmbeddedResource Include="Resources\Cut.png" />
+    <EmbeddedResource Include="Resources\DashStyles.png" />
+    <EmbeddedResource Include="Resources\LayoutShapes.png" />
+    <EmbeddedResource Include="Resources\LineCaps.png" />
+    <EmbeddedResource Include="Resources\LineWeights.png" />
+    <EmbeddedResource Include="Resources\OpenFolder.png" />
+    <EmbeddedResource Include="Resources\Paste.png" />
+    <EmbeddedResource Include="Resources\Polygon.png" />
+    <EmbeddedResource Include="Resources\Save.png" />
+    <EmbeddedResource Include="Resources\StraightLines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scribble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DrawRectangle.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ZoomMarquee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\hand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PageSetupDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Image.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ClosedFolder.gif" />
+    <EmbeddedResource Include="Resources\OpenedFolder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Drawing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Textbox.png" />
+    <EmbeddedResource Include="Resources\ViewZoomIn.png" />
+    <EmbeddedResource Include="Resources\ViewZoomOut.png" />
+    <EmbeddedResource Include="Resources\ZoomIn.png" />
+    <EmbeddedResource Include="Resources\ZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Print.png" />
+    <EmbeddedResource Include="Resources\PrintPreview.png" />
+    <EmbeddedResource Include="Resources\PrintSetup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\InsertPicture.png" />
+    <EmbeddedResource Include="Resources\NavBack.png" />
+    <EmbeddedResource Include="Resources\NavForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ShowConnectors.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ClassShape2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

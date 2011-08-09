@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF0C2C48-1860-4871-8167-621FE42CCFA2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CerebrumShell</RootNamespace>
+    <AssemblyName>cereb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\cereb.xml</DocumentationFile>
+    <WarningsAsErrors>1591</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\cereb.XML</DocumentationFile>
+    <WarningsAsErrors>1591</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FalconCommandLineParser\FalconCommandLineParser\FalconCommandLineParser.csproj">
+      <Project>{51299C7B-871B-459C-8BE3-8C9E5072D681}</Project>
+      <Name>FalconCommandLineParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconCoreServerCompiler\FalconCoreServerCompilerTool\FalconCoreServerCompilerTool.csproj">
+      <Project>{192B2CDB-F380-42E3-AB4D-A8C776ED6B6F}</Project>
+      <Name>FalconCoreServerCompilerTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconCoreServerCompiler\FalconCoreServerCompiler\FalconCoreServerCompiler.csproj">
+      <Project>{BD72731B-5CAC-4EF0-9845-C21572A4716A}</Project>
+      <Name>FalconCoreServerCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconGlobal\FalconGlobal.csproj">
+      <Project>{D1213EFE-A95C-4513-A604-0613D669487A}</Project>
+      <Name>FalconGlobal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconMappingAlgorithm\FalconMappingAlgorithm\FalconMappingAlgorithm.csproj">
+      <Project>{393DAE63-5D0B-4251-9FA6-E2F84E918B40}</Project>
+      <Name>FalconMappingAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconMappingAlgorithm\FalconMapTool\FalconMapTool\FalconMapTool.csproj">
+      <Project>{7D05D149-0374-4CC4-9FD1-0EFD712567C2}</Project>
+      <Name>FalconMapTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconPathManager\FalconPathManager.csproj">
+      <Project>{9D9E48B8-E211-4600-A6CF-0DE63DD582CD}</Project>
+      <Name>FalconPathManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconPlatformSynthesis\FalconPlatformSynthesisTool\FalconPlatformSynthesisTool.csproj">
+      <Project>{08F13270-2636-46F1-BBE0-F29C7BE0C97B}</Project>
+      <Name>FalconPlatformSynthesisTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconPlatformSynthesis\FalconPlatformSynthesis\FalconPlatformSynthesis.csproj">
+      <Project>{8D7A0BA0-5330-42EE-BAAB-6EE6042DE4DA}</Project>
+      <Name>FalconPlatformSynthesis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconXpsBuilder\XpsBuilderTool\XpsBuilderTool.csproj">
+      <Project>{9F1AEE9B-5DFC-49E8-B48D-7E29CA86345F}</Project>
+      <Name>XpsBuilderTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FalconXpsBuilder\XpsBuilder\XpsBuilder.csproj">
+      <Project>{3C1E7A0D-45BA-4F15-A2E8-44593024FDE0}</Project>
+      <Name>XpsBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JTAG Programmer\FalconJTAGProgrammer\FalconJTAGProgrammer\FalconJTAGProgrammer.csproj">
+      <Project>{A7FB5482-0E60-4A16-A4E2-C4368119D265}</Project>
+      <Name>FalconJTAGProgrammer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JTAG Programmer\JProgrammerTool\JProgrammerTool\JProgrammerTool.csproj">
+      <Project>{47301E37-A911-4F83-9691-492FA24EBD10}</Project>
+      <Name>JProgrammerTool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CerebrumCommandShell\CerebrumCommandShell.csproj">
+      <Project>{9BF04D71-9549-4843-92CD-A58EAC6EBE56}</Project>
+      <Name>CerebrumCommandShell</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+if EXIST *.dll copy /y *.dll ..\..\..\..\..\bin
+if EXIST *.exe copy /y *.exe ..\..\..\..\..\bin
+cd ..\..\..\..\..\bin
+if EXIST *.vshost.exe del /q /f *.vshost.exe</PostBuildEvent>
+  </PropertyGroup>
+</Project>

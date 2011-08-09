@@ -1,0 +1,111 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A7554CE-0D9A-4DD5-862F-7E77F9691570}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GraphicsLibrary</RootNamespace>
+    <AssemblyName>GraphicsLibrary</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>GraphicsLibrarySnk.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CornerStyle.cs" />
+    <Compile Include="CornerStyleTypeConverter.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="FillStyleTypeConverter.cs" />
+    <Compile Include="FillTypeConverter.cs" />
+    <Compile Include="Geometry.cs" />
+    <Compile Include="GMath.cs" />
+    <Compile Include="GradientFillTypeConverter.cs" />
+    <Compile Include="IRenderer.cs" />
+    <Compile Include="LineRenderer.cs" />
+    <Compile Include="RendererBase.cs" />
+    <Compile Include="RendererCollection.cs" />
+    <Compile Include="RendererCollectionTypeConverter.cs" />
+    <Compile Include="RendererTypeConverter.cs" />
+    <Compile Include="Fill.cs" />
+    <Compile Include="FillStyle.cs" />
+    <Compile Include="GradientFill.cs" />
+    <Compile Include="IRenderer2D.cs" />
+    <Compile Include="LineStyle.cs" />
+    <Compile Include="Renderer2D.cs" />
+    <Compile Include="PointList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectangleConverter.cs" />
+    <Compile Include="Shadow.cs" />
+    <Compile Include="ShadowTypeConverter.cs" />
+    <Compile Include="SmoothLine.cs" />
+    <Compile Include="StraightLine.cs" />
+    <Compile Include="TwoDimensional\TextBlock.cs" />
+    <Compile Include="TextBlockTypeConverter.cs" />
+    <Compile Include="TextDirection.cs" />
+    <Compile Include="TwoDimensional\EllipseRenderer.cs" />
+    <Compile Include="TwoDimensional\RectangleRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GraphicsLibrarySnk.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{973F3070-8185-4B8E-B16F-619FC84A0B60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CerebrumProjectManager</RootNamespace>
+    <AssemblyName>CerebrumProjectManager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <WarningsAsErrors>1591</WarningsAsErrors>
+    <DocumentationFile>bin\Debug\CerebrumProjectManager.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.2.3312.32172, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Netron2009\Netron2009\NetronProject\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\CerebrumCoreCreateEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CerebrumCoreCreateEditDialog.Designer.cs">
+      <DependentUpon>CerebrumCoreCreateEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CommunicationsManagerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CommunicationsManagerDialog.Designer.cs">
+      <DependentUpon>CommunicationsManagerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CoreClockManagerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CoreClockManagerDialog.Designer.cs">
+      <DependentUpon>CoreClockManagerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\PECodeEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PECodeEditorDialog.designer.cs">
+      <DependentUpon>PECodeEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ProcessorManagerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ProcessorManagerDialog.Designer.cs">
+      <DependentUpon>ProcessorManagerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CorePropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CorePropertiesDialog.Designer.cs">
+      <DependentUpon>CorePropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\PasswordPromptDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PasswordPromptDialog.designer.cs">
+      <DependentUpon>PasswordPromptDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ProgrammingManagerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ProgrammingManagerDialog.Designer.cs">
+      <DependentUpon>ProgrammingManagerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ProjectPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ProjectPropertiesDialog.Designer.cs">
+      <DependentUpon>ProjectPropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ServerManagerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ServerManagerDialog.Designer.cs">
+      <DependentUpon>ServerManagerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ProjectPathsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ProjectPathsDialog.Designer.cs">
+      <DependentUpon>ProjectPathsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SynthesisSelectivePlatformDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SynthesisSelectivePlatformDialog.designer.cs">
+      <DependentUpon>SynthesisSelectivePlatformDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SynthesisSelectivePurgeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SynthesisSelectivePurgeDialog.Designer.cs">
+      <DependentUpon>SynthesisSelectivePurgeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Platform Representation\CerebrumPlatform.cs" />
+    <Compile Include="Platform Representation\CerebrumPlatformBoard.cs" />
+    <Compile Include="Platform Representation\CerebrumPlatformFPGA.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="System Objects\CerebrumProcessor.cs" />
+    <Compile Include="ProjectManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System Objects\CommunicationConfiguration.cs" />
+    <Compile Include="System Objects\ProgrammerConfiguration.cs" />
+    <Compile Include="Wizards\ICerebrumWizard.cs" />
+    <Compile Include="Wizards\New Project Wizard\frmNewProjectWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wizards\New Project Wizard\frmNewProjectWizard.Designer.cs">
+      <DependentUpon>frmNewProjectWizard.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\FalconSVN\Software\Cerebrum\BackEnd\FalconGlobal\FalconGlobal.csproj">
+      <Project>{D1213EFE-A95C-4513-A604-0613D669487A}</Project>
+      <Name>FalconGlobal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\FalconSVN\Software\Cerebrum\BackEnd\FalconPathManager\FalconPathManager.csproj">
+      <Project>{9D9E48B8-E211-4600-A6CF-0DE63DD582CD}</Project>
+      <Name>FalconPathManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\FalconSVN\Software\Cerebrum\FrontEnd\Netron2009\Netron2009\Netron.Diagramming.Core\Netron.Diagramming.Core.csproj">
+      <Project>{96AEBBEE-4203-45F3-BCF5-7B73BF256BDA}</Project>
+      <Name>Netron.Diagramming.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\FalconSVN\Software\Cerebrum\FrontEnd\Netron2009\Netron2009\Netron.Diagramming.Win\Netron.Diagramming.Win.csproj">
+      <Project>{1D15C2A9-7D08-4BA6-B307-BDE0CA8AF1CB}</Project>
+      <Name>Netron.Diagramming.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\FalconSVN\Software\Cerebrum\FrontEnd\Netron2009\Netron2009\ToolBox\ToolBox.csproj">
+      <Project>{904EC475-F6F7-4091-8FFB-D7C12BE1648F}</Project>
+      <Name>ToolBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BackEnd\FalconClockManager\FalconClockManager.csproj">
+      <Project>{D3E9A8D2-0C66-4BF8-83D5-8FDA7CB880B8}</Project>
+      <Name>FalconClockManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BackEnd\FalconPlatformSynthesis\FalconPlatformSynthesis\FalconPlatformSynthesis.csproj">
+      <Project>{8D7A0BA0-5330-42EE-BAAB-6EE6042DE4DA}</Project>
+      <Name>FalconPlatformSynthesis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BackEnd\FalconXpsBuilder\XpsBuilder\XpsBuilder.csproj">
+      <Project>{3C1E7A0D-45BA-4F15-A2E8-44593024FDE0}</Project>
+      <Name>XpsBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BackEnd\JTAG Programmer\FalconJTAGProgrammer\FalconJTAGProgrammer\FalconJTAGProgrammer.csproj">
+      <Project>{A7FB5482-0E60-4A16-A4E2-C4368119D265}</Project>
+      <Name>FalconJTAGProgrammer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CerebrumNetronObjects\CerebrumNetronObjects.csproj">
+      <Project>{7E5E5284-0421-431F-8A7B-649629DD2A73}</Project>
+      <Name>CerebrumNetronObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CerebrumSharedClasses\CerebrumSharedClasses.csproj">
+      <Project>{35D43F5B-D9D5-4827-A1CD-890C563A2BF8}</Project>
+      <Name>CerebrumSharedClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Netron2009\Netron2009\NetronProject\NetronProject.csproj">
+      <Project>{158E299D-4D69-4F24-969B-4851AC3B81AF}</Project>
+      <Name>NetronProject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialogs\CerebrumCoreCreateEditDialog.resx">
+      <DependentUpon>CerebrumCoreCreateEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CommunicationsManagerDialog.resx">
+      <DependentUpon>CommunicationsManagerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CoreClockManagerDialog.resx">
+      <DependentUpon>CoreClockManagerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PECodeEditorDialog.resx">
+      <DependentUpon>PECodeEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProcessorManagerDialog.resx">
+      <DependentUpon>ProcessorManagerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CorePropertiesDialog.resx">
+      <DependentUpon>CorePropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PasswordPromptDialog.resx">
+      <DependentUpon>PasswordPromptDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProgrammingManagerDialog.resx">
+      <DependentUpon>ProgrammingManagerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProjectPathsDialog.resx">
+      <DependentUpon>ProjectPathsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ProjectPropertiesDialog.resx">
+      <DependentUpon>ProjectPropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ServerManagerDialog.resx">
+      <DependentUpon>ServerManagerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SynthesisSelectivePlatformDialog.resx">
+      <DependentUpon>SynthesisSelectivePlatformDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SynthesisSelectivePurgeDialog.resx">
+      <DependentUpon>SynthesisSelectivePurgeDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizards\New Project Wizard\frmNewProjectWizard.resx">
+      <DependentUpon>frmNewProjectWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>cd "$(TargetDir)"
+if EXIST *.dll copy /y *.dll ..\..\..\..\Install\bin
+if EXIST *.exe copy /y *.exe ..\..\..\..\Install\bin
+cd ..\..\..\..\Install\bin
+if EXIST *.vshost.exe del /q /f *.vshost.exe</PostBuildEvent>
+  </PropertyGroup>
+</Project>
