@@ -1,0 +1,1 @@
+Provides a graphical framework for creating hardware designs and translating those designs to a Single- or Multi-FPGA hardware system.
